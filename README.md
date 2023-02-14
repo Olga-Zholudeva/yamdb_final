@@ -1,4 +1,4 @@
-![example workflow](https://github.com/Olga-Zholudeva/yamdb_final/actions/workflows/yamdb_workflow.yml./badge.svg)
+![example workflow](https://github.com/Olga-Zholudeva/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # yamdb_final
 
