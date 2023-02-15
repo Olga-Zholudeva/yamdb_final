@@ -43,6 +43,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
+          context: api_yamdb
           tags: olgazholudeva/infra_sp2:latest
   
   deploy:
