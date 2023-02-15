@@ -14,7 +14,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '*']
+ALLOWED_HOSTS = ['158.160.15.30']
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL = "Aa@mail.ru"
