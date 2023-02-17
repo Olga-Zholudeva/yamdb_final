@@ -2,6 +2,10 @@
 
 # yamdb_final: http://158.160.15.30/redoc/
 
+### Запуск проекта:
+ - Проект запускается автоматически после выполения команды git push 
+ - Для запуска проекта на своем сервере необходимо скорректировать IP адрес: в настройках settings, default.conf 
+
 ### Описание проекта:
 
 Проект сбирает отзывы и оценки на произведения. Произведения делятся на категории. 
@@ -27,42 +31,10 @@
 Python 3.7.9
 Django 2.2.16
 
-### Запуск проекта в dev-режиме:
-- Установите и активируйте виртуальное окружение:
-'python3 -m venv venv'
-'source venv/bin/activate'
-
-- Установите зависимости из файла requirements.txt:
-'pip3 install -r requirements.txt'
-
-- Примените миграции:
-'python3 manage.py makemigrations'
-'python3 manage.py migrate'
-
-- Запустите сервер:
-'python3 manage.py runserver'
-
-- Использовать проект можно при помощи Postman
-- После запуска проекта документация к API будет доступна по адресу http://127.0.0.1:8000/redoc/
-
-### Запуск проекта с помщью Docker:
- - Создайте и запустите образы, контейнеры и тома с помощью:
- 'docker-compose up'
-- Выполните миграции:
-'docker-compose exec web python manage.py migrate'
-- Загрузите статику:
-'docker-compose exec web python manage.py collectstatic --no-input'
-- Создайте суперюзера для управления через страницу администратора
-'docker-compose exec web python manage.py createsuperuser'
-- Остановка работы контейнеров без их удаления:
-'docker-compose stop'
-- Запуск оставновленных контейнеров
-docker-compose start
-
 ### Примеры запросов для неавторизованных пользователей:
 
 ### Запрос на получение списка всех произведений:
-GET http://127.0.0.1:8000/api/v1/titles/
+GET http://158.160.15.30/api/v1/titles/
 ### Ответ:
 {
 "count": 0,
